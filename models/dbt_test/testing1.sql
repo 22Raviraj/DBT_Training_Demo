@@ -6,3 +6,4 @@ select
     )
   ) as table_hash
 from {{ ref('customer_source') }}
+order by customer_id
