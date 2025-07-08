@@ -7,3 +7,4 @@ select
   ) as table_hash
 from {{ ref('customers') }}
 order by customer_id
+limit 10
